@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    android:orientation="vertical"
+    tools:context="com.cgjz.MainActivity" >
+
+	<fragment
+        android:id="@+id/fragment_asset"
+        android:name="com.cgjz.FragmentAsset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+	<fragment
+        android:id="@+id/fragment_stock"
+        android:name="com.cgjz.FragmentStock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+	<fragment
+        android:id="@+id/fragment_main"
+        android:name="com.cgjz.FragmentMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+	<fragment
+        android:id="@+id/fragment_profit"
+        android:name="com.cgjz.FragmentProfit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+	
+	<fragment
+        android:id="@+id/fragment_inset"
+        android:name="com.cgjz.FragmentInset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+	
+	<RadioGroup 
+	    android:id="@+id/bottom_menuBG"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.5"
+	    android:background="@drawable/tab_footer_bg"
+	    android:orientation="horizontal">
+		<RadioButton 
+	        android:id="@+id/assetBT"
+	        style="@style/rg_btn_style"
+	        android:checked="true"
+	        android:drawableTop="@drawable/rb_one_btn_selector"
+	        android:text="资产"/>
+	    <RadioButton 
+	        android:id="@+id/stockBT"
+	        style="@style/rg_btn_style"
+	        android:checked="true"
+	        android:drawableTop="@drawable/rb_two_btn_selector"
+	        android:text="股票"/>
+	    <RadioButton 
+	        android:id="@+id/mainBT"
+	        style="@style/rg_btn_style"
+	        android:checked="true"
+	        android:drawableTop="@drawable/rb_one_btn_selector"
+	        android:text="首页"/>
+	    <RadioButton 
+	        android:id="@+id/profitBT"
+	        style="@style/rg_btn_style"
+	        android:checked="true"
+	        android:drawableTop="@drawable/rb_three_btn_selector"
+	        android:text="收益"/>
+		
+	    <RadioButton 
+	        android:id="@+id/insetBT"
+	        style="@style/rg_btn_style"
+	        android:checked="true"
+	        android:drawableTop="@drawable/rb_three_btn_selector"
+	        android:text="自选"/>
+	</RadioGroup>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mySetDialogLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="佣金费率(‰)" />
+
+        <EditText
+            android:id="@+id/stock_expensesET"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="请输入数字"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="印花税率(‰)" />
+
+        <EditText
+            android:id="@+id/stock_taxET"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="请输入数字"
+            android:text="" />
+    </TableRow>
+<TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="过户费率(‰)" />
+
+        <EditText
+            android:id="@+id/stock_transferfeeET"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="请输入数字"
+            android:text="" />
+    </TableRow>
+</TableLayout>

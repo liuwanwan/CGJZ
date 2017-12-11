@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stockInfoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="30sp"
+    android:background="@drawable/list_item_color_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/stockNameTV"
+        android:layout_width="60dp"
+        android:layout_height="30sp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="名称"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <com.cgjz.InterceptScrollContainer
+        android:id="@+id/scroollContainter"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/stockNameTV"
+        android:focusable="false" >
+
+        <com.cgjz.MyHScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:focusable="false"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/stockNumberTV"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="数量"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/stockCostTV"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="成本"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/stockPriceTV"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="现价"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/stockMoneyTV"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="市值"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/stockProfitTV"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="浮动盈亏"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+               </LinearLayout>
+        </com.cgjz.MyHScrollView>
+    </com.cgjz.InterceptScrollContainer>
+    </RelativeLayout>

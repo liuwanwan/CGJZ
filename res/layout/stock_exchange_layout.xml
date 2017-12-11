@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myDialogLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/buyOfsellRG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/buyRButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="买进 " />
+
+        <RadioButton
+            android:id="@+id/sellRButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卖出 " />
+    </RadioGroup>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:text="名称" />
+
+            <AutoCompleteTextView
+                android:id="@+id/stock_namecodeET"
+                android:layout_width="140sp"
+                android:layout_height="wrap_content"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="请输入股票代码或首拼音"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:text="数量" />
+
+            <EditText
+                android:id="@+id/stock_numberET"
+                android:layout_width="140sp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+            android:hint="请输入数字"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:text="价格" />
+
+            <EditText
+                android:id="@+id/stock_priceET"
+                android:layout_width="140sp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+            android:hint="请输入数字"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:text="佣金" />
+
+            <TextView
+                android:id="@+id/stock_expensesTV"
+                android:layout_width="140sp"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:text="印花税" />
+
+            <TextView
+                android:id="@+id/stock_taxTV"
+                android:layout_width="140sp"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:text="过户费" />
+
+            <TextView
+                android:id="@+id/stock_transferfeeTV"
+                android:layout_width="140sp"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
